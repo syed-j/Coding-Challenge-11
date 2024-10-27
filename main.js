@@ -14,3 +14,6 @@ function updateTotalPrice() {
     // Update the total price display
     totalPriceElement.textContent = totalPrice.toFixed(2);
 }
+// Add event listeners for product selection and quantity input
+productSelector.addEventListener('change', updateTotalPrice);
+quantityInput.addEventListener('input', updateTotalPrice);
